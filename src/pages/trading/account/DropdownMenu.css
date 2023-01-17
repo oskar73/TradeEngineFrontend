@@ -1,0 +1,71 @@
+.dropdown {  
+    position: relative;  
+    display: inline-block;  
+}  
+
+.dropbtn {  
+    background-color: #4CAF50; /* Green */  
+    color: white;  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    border: none;  
+    cursor: pointer;  
+    border-radius: 5px;  
+    transition: background-color 0.3s;  
+    width: 200px;
+}  
+
+.dropbtn:hover {  
+    background-color: #45a049; /* Darker green */  
+}  
+
+.dropdown-content {  
+    display: block; /* Show on toggle */  
+    position: absolute;  
+    left: 0; /* Align to the left of the button */  
+    z-index: 1;  
+    background-color: white;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    border-radius: 5px;  
+    min-width: 200px; /* Set a minimum width */  
+}  
+
+.dropdown-group {  
+    position: relative;  
+}  
+
+.group-label {  
+    padding: 12px;  
+    cursor: pointer;  
+    transition: font-weight 0.3s; /* Transition for smooth hover */  
+}  
+
+.group-label.active {  
+    font-weight: bold; /* Make the parent active group bold */  
+}  
+
+.arrow {  
+    margin-left: 8px; /* Add some space between text and arrow */  
+}  
+
+.child-menu {  
+    display: block; /* Show when active group is selected */  
+    position: absolute;  
+    left: 100%; /* Position to the right of the parent */  
+    top: 0; /* Align with the top of the parent */  
+    z-index: 1; /* Ensure it appears above other content */  
+    background-color: white;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    border-radius: 5px;  
+    min-width: 150px; /* Set a minimum width for child menu */  
+}  
+
+.child-item {  
+    padding: 10px 12px;  
+    cursor: pointer;  
+    transition: background-color 0.3s; /* Transition for smooth hover */  
+}  
+
+.child-item:hover {  
+    background-color: #f1f1f1; /* Light grey on hover */  
+}
